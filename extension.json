@@ -1,0 +1,31 @@
+{
+    "name": "LdapSignCheck",
+    "version": "0.0.0",
+    "command_name": "ldapsigncheck",
+    "extension_author": "c2biz",
+    "original_author": "cube0x0",
+    "repo_url": "https://github.com/sliverarmory/LdapSignCheck",
+    "help": "check LDAP signing",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "ldapsigncheck.x64.o"
+        },
+        {
+            "os": "windows",
+            "arch": "386",
+            "path": "ldapsigncheck.x86.o"
+        }
+    ],
+    "arguments": [
+        {
+            "name": "target",
+            "desc": "target host",
+            "type": "string",
+            "optional": false
+        }
+    ]
+}
