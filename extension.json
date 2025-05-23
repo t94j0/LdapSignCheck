@@ -22,9 +22,15 @@
     ],
     "arguments": [
         {
+            "name": "targetSPN",
+            "desc": "target SPN host (e.x. LDAP/DC01.CONTOSO.LOCAL)",
+            "type": "wstring",
+            "optional": false
+        },
+        {
             "name": "target",
-            "desc": "target host",
-            "type": "string",
+            "desc": "target host (e.x. DC01.CONTOSO.LOCAL)",
+            "type": "wstring",
             "optional": false
         }
     ]
